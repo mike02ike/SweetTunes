@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 100px;
+    padding: 0;
+    /* background-image: url('https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
+    background-image: url('https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75); /* Adjusted background color to create a semi-transparent overlay */
+}
+
+.header {
+    font-size: 3rem;
+    font-family: Montserrat;
+    margin-bottom: 10px;
+    color: #333; /* Adjusted header color to improve readability */
+}
+
+.uh {
+    font-size: .75rem;
+    font-family: Montserrat;
+    margin-bottom: 30px;
+    color: #333; /* Adjusted text color to improve readability */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: Montserrat;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: Montserrat;
+    font-size: small;
+    color: #333; /* Adjusted text color to improve readability */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333; /* Adjusted label color to improve readability */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Montserrat;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.rules {
+    color: black;
+}
+
+.signup {
+    margin-top: 20px;
+}
+
+.signup span {
+    color: #333;
+    font-family: Montserrat;
+}
+
+.signup a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: Montserrat;
+}
+
+.login{
+    color: #333;
+    font-family: Montserrat;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sweet Tunes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/welcome.css') }}">
+</head>
+<body id="background">
+    <div class="container">
+        <h1 class="header">Welcome to SweetTunes!</h1>
+        <h2 class="uh">Your music adventure awaits you...</h2>
+        {% for message in get_flashed_messages() %}
+            <div class="alert">{{ message }}</div>
+        {% endfor %}
+        <form id="loginForm" action="/login" method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" minlength="6" maxlength="30" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="6" maxlength="30" required>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="signup">
+            <span>Not a member?</span>
+            <a href="{{ url_for('signup') }}">Sign Up</a>
+        </div>
+    </div>
+</body>
+<!-- <footer>
+    <p>&copy; 2024 Sweet Tunes. All rights reserved.</p>
+</footer> -->
+</html>

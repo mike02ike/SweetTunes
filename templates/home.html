@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sweet Tunes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome back, {{ username }}!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Music Library</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-content">
+        <h2>Your Music Dashboard</h2>
+        <div class="playlist">
+            <h3>My Playlist</h3>
+            <ul>
+                <li>Song 1</li>
+                <li>Song 2</li>
+                <li>Song 3</li>
+                <!-- Add more songs dynamically -->
+            </ul>
+        </div>
+        <div class="recommended">
+            <h3>Recommended for You</h3>
+            <ul>
+                <li>Recommended Song 1</li>
+                <li>Recommended Song 2</li>
+                <li>Recommended Song 3</li>
+                <!-- Add more recommended songs dynamically -->
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sweet Tunes. All rights reserved.</p>
+    </footer>
+</body>
+</html>

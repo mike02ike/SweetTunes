@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/1490844/pexels-photo-1490844.jpeg?auto=compress&cs=tinysrgb&w=1200');
+    /* background-image: url('https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    font-size: 3rem;
+    font-family: Montserrat;
+    margin-bottom: 10px;
+}
+
+.uh {
+    font-size: .75rem;
+    font-family: Montserrat;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: Montserrat;
+}
+    
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: Montserrat;
+    font-size: small;
+    
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Montserrat;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    color: red;
+    font-family: Montserrat;
+}
+
+.signup {
+    margin-top: 20px;
+}
+
+.signup span {
+    color: #333;
+    font-family: Montserrat;
+}
+
+.signup a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: Montserrat;
+}
