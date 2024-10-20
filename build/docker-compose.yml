@@ -1,0 +1,26 @@
+services:
+  backend:
+    build:
+      context: ../  # Build context is the parent directory (Sweet Tunes/)
+      dockerfile: build/backend.Dockerfile  # Path to the Dockerfile in the build directory
+    ports:
+      - "5001:5001"
+    volumes:
+      - ../src/backend:/app  # Mounting the src/backend directory
+    networks:
+      - sweet-tunes-net
+
+  frontend:
+    build:
+      context: ../  # Build context is the parent directory (Sweet Tunes/)
+      dockerfile: build/frontend.Dockerfile  # Path to the Dockerfile in the build directory
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../src/frontend:/app  # Mounting the src/frontend directory
+    networks:
+      - sweet-tunes-net
+
+networks:
+  sweet-tunes-net:
+    driver: bridge

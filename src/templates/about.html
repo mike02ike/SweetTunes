@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About - Sweet Tunes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="icon">
+            <h2 class="logo">Sweet Tunes</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">HOME</a></li>
+                <li><a href="#">MUSIC LIBRARY</a></li>
+                <li><a href="#">SETTINGS</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a href="{{ url_for('contact') }}">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="profile-container">
+            <a href="{{ url_for('profile') }}" class="profile-username">{{ username }}</a>
+        </div>
+    </header>
+    <hr>
+    <main class="container">
+        <section class="about">
+            <h1>About Us</h1>
+            <div class="content">
+                <h2>Introduction</h2>
+                <p>Welcome to MyFintel! Our platform is dedicated to providing real-time financial insights and analytics to help you make informed investment decisions.</p>
+                
+                <h2>Mission Statement</h2>
+                <p>Our mission is to empower investors with the tools and knowledge they need to navigate the financial markets with confidence.</p>
+                
+                <h2>Team Members</h2>
+                <ul class="team">
+                    <li>
+                        <div class="avatar">
+                            <img src="{{ url_for('static', filename='pics/IMG_9885.JPG') }}" alt="Michael Ike" class="team-photo">
+                        </div>
+                        <p><strong>Michael Ike</strong> - CEO & Founder</p>
+                    </li>
+                    <!-- Add more team members here -->
+                </ul>
+                
+                <h2>History</h2>
+                <p>MyFintel was founded in 2020 with the aim of democratizing financial data...</p>
+                <br>
+                <br>
+                <br>
+                <h1 class="rh">Robinhood</h1>
+                <p>Click here to visit <a target="_blank" href="https://robinhood.com" title="This takes you to Robinhood">Robinhood.com</a></p>
+            </div>
+
+    
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyFintel. All rights reserved.</p>
+    </footer>
+</body>
+</html>

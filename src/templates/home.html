@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sweet Tunes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="icon">
+            <h2 class="logo">Sweet Tunes</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">HOME</a></li>
+                <li><a href="#">MUSIC LIBRARY</a></li>
+                <li><a href="#">SETTINGS</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a href="{{ url_for('contact') }}">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="profile-container">
+            <a href="{{ url_for('profile') }}" class="profile-username">{{ username }}</a>
+        </div>
+    </header>
+    <hr>
+    <section class="main-content">
+        <h2>Your Music Dashboard</h2>
+        <div class="playlist">
+            <h3>My Playlist</h3>
+            <ul>
+                <li>Song 1</li>
+                <li>Song 2</li>
+                <li>Song 3</li>
+                <!-- Add more songs dynamically -->
+            </ul>
+        </div>
+        <div class="recommended">
+            <h3>Recommended for You</h3>
+            <ul>
+                <li>Recommended Song 1</li>
+                <li>Recommended Song 2</li>
+                <li>Recommended Song 3</li>
+                <!-- Add more recommended songs dynamically -->
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sweet Tunes. All rights reserved.</p>
+        <div class="footer-follow">
+            <h2>Follow us on:</h2>
+            <p>
+                <span><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></span>
+                <span><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

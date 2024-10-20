@@ -1,0 +1,210 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    margin: 0;
+    padding-top: 80px; /* Adjust if needed to make room for the fixed header */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts at the top */
+    align-items: center; /* Center content horizontally */
+}
+
+h1 {
+    font-size: 48px;
+    color: #9724fc;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #9724fc;
+}
+
+p {
+    font-size: 16px;
+    font-weight: light;
+    color: white;
+}
+
+span a {
+    font-size: 18px;
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+span a:hover {
+    color: #ffffff;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 1px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    margin: 0 auto 20px; /* Center and add space below the avatar */
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    text-align: center;
+}
+
+ul.team {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.team li {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+ul.team li .team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6%;
+    background-color: rgba(51, 51, 51, 0.95);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    z-index: 1000;
+}
+
+.icon .logo {
+    color: #9724fc;
+    font-size: 48px;
+    background-color: black;
+    outline-color: #9724fc;
+    margin-left: 20px;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffdd00;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: #9724fc;
+}
+
+.signout-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.profile-username {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    background-color: #9724fc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px; /* Adjust margin as needed */
+    outline-color: black;
+}
+
+.profile-username:hover {
+    background-color: #b866ff;
+}
+
+.signout {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    background-color: #9724fc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 40px; /* Adjust margin as needed */
+    outline-color: black;
+}
+
+.signout:hover {
+    background-color: #9724fc;
+}
+
+.rh {
+    color: green;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.95);
+    color: #FFFFFF;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}

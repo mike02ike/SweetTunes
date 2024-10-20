@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Profile - Sweet Tunes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="icon">
+            <h2 class="logo">Sweet Tunes</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">HOME</a></li>
+                <li><a href="#">MUSIC LIBRARY</a></li>
+                <li><a href="#">SETTINGS</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a href="{{ url_for('contact') }}">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="profile-container">
+            <a href="{{ url_for('profile') }}" class="profile-username">{{ username }}!</a>
+        </div>
+    </header>
+    <hr>
+    <section class="profile-content">
+        <h1>Profile - {{ username }}</h1>
+        <div class="profile-details">
+            <p><strong>Username:</strong> {{ username }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <!-- Add more profile details here -->
+        </div>
+        <a href="{{ url_for('logout') }}" class="signout">Logout</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sweet Tunes. All rights reserved.</p>
+    </footer>
+</body>
+</html>

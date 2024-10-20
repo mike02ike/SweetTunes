@@ -1,0 +1,9 @@
+# Ignore compiled Python files
+__pycache__/
+.DS_Store
+METADATA
+
+# Ignore other system-generated files
+*.pyc
+*.pyo
+*.pyd
